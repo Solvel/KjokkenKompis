@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ingredientsview"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:scaleX="1.12"
+            android:layout_centerHorizontal="true"
+            android:onClick="openkjoleskap"
+            android:src="@drawable/ingredienser" />
+
+        <ImageView
+            android:id="@+id/shoppinglistview"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_below="@+id/ingredientsview"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:onClick="openhandlelist"
+            android:scaleType="fitCenter"
+            android:scaleX="1.6"
+            android:src="@drawable/shoppinglist" />
+
+        <ImageView
+            android:id="@+id/recipeview"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_below="@+id/shoppinglistview"
+            android:layout_marginTop="0dp"
+            android:onClick="openRecipeMode"
+            android:scaleType="fitCenter"
+            android:scaleX="1.4"
+            android:src="@drawable/oppskrifter" />
+
+        <ImageView
+            android:id="@+id/socialview"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_below="@+id/recipeview"
+            android:layout_marginTop="0dp"
+            android:onClick="openSocial"
+            android:scaleType="fitCenter"
+            android:scaleX="1.25"
+            android:src="@drawable/social"/>
+
+        <TextView
+            android:id="@+id/txtIngredients"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="0.1"
+            android:text="Ingredienser"
+            android:textColor="@color/white"
+            android:textSize="80px" />
+
+        <TextView
+            android:id="@+id/txtShoppinglist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="214dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1.0"
+            android:text="Handleliste"
+            android:textColor="@android:color/white"
+            android:textSize="80px"/>
+
+        <TextView
+            android:id="@+id/txtRecipe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="398dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1.0"
+            android:text="Oppskrifter"
+            android:textColor="@android:color/white"
+            android:textSize="80px"/>
+
+        <TextView
+            android:id="@+id/txtSocial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="582dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1.0"
+            android:text="Sosial"
+            android:textColor="#C8C8C8"
+            android:textSize="80px" />
+
+        <TextView
+            android:id="@+id/txtComingSoon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="582dp"
+            android:rotation="-33"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1.0"
+            android:text="Coming soon"
+            android:textColor="@color/white"
+            android:textSize="80px" />
+    </RelativeLayout>
+</ScrollView>

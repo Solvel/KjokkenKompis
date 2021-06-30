@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient_background"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/textview_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_margin="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/timer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/timer"
+        android:scaleType="fitStart"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_start_pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:layout_toRightOf="@+id/textview_countdown"
+        android:src="@drawable/play"
+        />
+
+    <TextView
+        android:id="@+id/recipeingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredienser: "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <ListView
+        android:id="@+id/listingredients"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/recipeingredients"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/recipeapproachtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fremgangsmåte: "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/listingredients"
+        />
+
+    <TextView
+        android:id="@+id/recipeapproach"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:scrollbars = "vertical"
+        android:text="Do the thang"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/recipeapproachtitle"
+        />
+
+    <Button
+        android:id="@+id/addIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipeapproach"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#84fab0"
+        android:layout_marginTop="10dp"
+        android:text="Legg til handleliste"
+        android:textColor="@color/black"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_edit_recipe_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <EditText
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#84fab0"
+        android:layout_alignParentBottom="true"
+        android:timePickerMode="spinner"
+        android:textSize="40dp"
+
+        android:hint="Set Minutter"
+        android:inputType="number"
+        android:maxLength="4"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sondre.kjokkenkompis">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kitchenbuddy"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/kitchenbuddy_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KjokkenKompis">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ingredients.EditIngredient" />
+        <activity android:name=".ingredients.ListIngredient"/>
+        <activity android:name=".shoppinglists.Listshopping" />
+        <activity android:name=".shoppinglists.Listitem" />
+        <activity android:name=".shoppinglists.Editshopping" />
+        <activity android:name=".recipes.ListRecipe" />
+        <activity android:name=".recipes.AddRecipe"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".recipes.EditRecipe"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".recipes.ListRecipeIngredient"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

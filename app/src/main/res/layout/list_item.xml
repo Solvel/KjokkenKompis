@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient_background"
+    android:animateLayoutChanges="true">
+
+    <ListView
+        android:id="@+id/listvare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginBottom="80dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabadd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/listvare"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabing"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/shoppingcart"
+        android:background="@color/teal_200"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabdelete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/listvare"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/minus"
+        android:scaleType="fitCenter"
+        android:background="@color/teal_700"/>
+
+    <EditText
+        android:id="@+id/textadditem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:hint="Ny ingrediens, skriv her..."
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        />
+
+</RelativeLayout>
